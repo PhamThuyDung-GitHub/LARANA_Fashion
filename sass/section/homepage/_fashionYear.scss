@@ -1,0 +1,50 @@
+.s-fashionYear {
+    margin: 2rem 0;
+    .s_colection {
+        position: relative;
+        img {
+            width: 70%;
+        }
+        .s_imgMove {
+            @include posAbsolute("tl", 40%, 10%);
+            animation: imgMove 6s linear infinite;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+        }
+        .s_intro {
+            @include posAbsolute("tr", 40%, 10%);
+            transform: translateY(-40%);
+            h5 {
+                font-weight: $fw-300;
+                font-size: $fs-18;
+                span {
+                    margin: 0 0.3rem;
+                }
+            }
+            h2 {
+                font-weight: $fw-600;
+                margin-left: 1rem;
+                font-size: $fs-40;
+                span {
+                    display: block;
+                    margin-left: 1rem;
+                }
+            }
+            .s_content {
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@keyframes imgMove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,98 @@
+.s-header {
+    @include flexBox("center", "");
+    padding: 1rem 0;
+    .s_logo {
+        margin-right: 2rem;
+        a {
+            img {
+                width: 120px;
+            }
+        }
+    }
+    .s_menu {
+        ul {
+            display: flex;
+            li {
+                a {
+                    color: $black-color;
+                    margin-right: 3rem;
+                    transition: 0.5s;
+                    font-weight: $fw-400;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    .s_search {
+        position: relative;
+        width: 30%;
+        margin-right: 3rem;
+        padding: 0.4rem 1rem;
+        border: 1px solid $gray-color-4;
+        background-color: $gray-color-5;
+        border-radius: 50px;
+        margin-left: auto;
+        input {
+            border: none;
+            background-color: transparent;
+        }
+        i {
+            @include posAbsolute("tr", 0.4rem, 0.7rem);
+        }
+    }
+    .s_icon {
+        display: flex;
+        gap: 1.5rem;
+        a {
+            position: relative;
+            text-align: center;
+            &:hover {
+                i {
+                    color: $secondary-color;
+                }
+                p {
+                    color: $secondary-color;
+                }
+            }
+            i {
+                transition: 0.5s;
+            }
+            p {
+                font-weight: $fw-300;
+                color: $gray-color;
+                font-size: $fs-14;
+                transition: 0.5s;
+            }
+            span {
+                @include posAbsolute("tr", -5px, -5px);
+                background-color: $secondary-color;
+                width: 14px;
+                height: 16px;
+                border-radius: 3px;
+                font-size: $fs-13;
+                font-weight: $fw-600;
+                color: $white-color;
+            }
+        }
+    }
+}
+.s-textRun {
+    color: $white-color;
+    background-color: $secondary-color;
+    font-size: $fs-14;
+    font-weight: $fw-300;
+    align-items: center;
+    display: flex;
+    font-style: italic;
+    height: 30px;
+    .s_item {
+        margin: 0 1rem;
+    }
+    .s_price {
+        margin: 0 0.3rem;
+        font-weight: $fw-600;
+        font-size: $fs-18;
+    }
+}

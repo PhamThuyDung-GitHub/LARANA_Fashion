@@ -1,0 +1,23 @@
+.s-feedBack {
+    background-image: linear-gradient(to top, #000000d7, #000000d7), url(../../../img/HomePage/feedback/background.png);
+    padding: 3rem 0;
+    .s_listFeed {
+        .s_customer {
+            img {
+                margin: 0 auto;
+                width: 10%;
+                border-radius: 50%;
+                border: 2px solid $black-color;
+            }
+            .s_text {
+                text-align: center;
+                .s_icon {
+                    font-size: $fs-40;
+                }
+                .s_feelCus {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
