@@ -3,9 +3,12 @@
 @import "helper/mixin";
 
 @import "page/homepage";
+@import "page/aboutUs";
+@import "page/product";
+@import "page/contact";
 
 @import "component/header";
-@import "component/detailProduct";
+@import "component/cardProduct";
 @import "component/button";
 @import "component/title";
 @import "component/footer";

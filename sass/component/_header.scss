@@ -1,6 +1,7 @@
 .s-header {
     @include flexBox("center", "");
-    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 0;
     .s_logo {
         margin-right: 2rem;
         a {

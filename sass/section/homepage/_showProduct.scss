@@ -1,7 +1,7 @@
 .s-showProduct {
     margin: 3rem 0;
     background-color: #eee;
-    background-image: linear-gradient(to top, #fffffff5, #fffffff5), url(../../../img/HomePage/showProduct/background.jpeg);
+    background-image: linear-gradient(to top, #fffffff9, #fffffff9), url(../../../img/HomePage/showProduct/background.jpeg);
     padding: 3rem 0;
     .s_show {
         display: flex;
@@ -17,6 +17,7 @@
                 &#shirt-2 {
                     .s_card {
                         top: 200px;
+                        left: 10%;
                     }
                     .s_dot {
                         top: 70%;
@@ -28,8 +29,13 @@
                     }
                 }
                 &.active {
+                    &#shirt-1 {
+                        &::after {
+                            width: 30%;
+                        }
+                    }
                     &::after {
-                        width: 30%;
+                        width: 50%;
                     }
                     .s_card {
                         opacity: 1;

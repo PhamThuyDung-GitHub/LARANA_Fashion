@@ -1,9 +1,49 @@
+//banner
 $(function () {
     $(".s-banner .s_list").slick({
         autoplay: true,
     });
 });
+
 //ourProduct
+let listTab = document.querySelectorAll(".s-ourProduct .s_bot .s_tab ul li");
+let changeTab = document.querySelector(".s-ourProduct .s_bot .s_tab ul li");
+let showCartProduct = document.querySelector(".s-ourProduct .s_bot .s_product .row");
+
+listTab.forEach((tab) => {
+    tab.addEventListener("click", function () {
+        listTab.forEach((otherTab) => {
+            otherTab.classList.remove("active");
+        });
+        tab.classList.add("active");
+        const tabText = tab.textContent.toLowerCase();
+        renderProduct(tabText);
+    });
+});
+
+//XU LY API
+
+async function renderProduct(tabText) {
+    const API_PRODUCT = `${URL_API}/product?cate=${tabText}`;
+    const dataProduct = await getData(API_PRODUCT);
+    console.log(dataProduct);
+    showCartProduct.innerHTML = "";
+    dataProduct.forEach((pro) => {
+        showCartProduct.innerHTML += `<div class="col-lg-3">
+                <div class="s_cardProduct">
+                    <div class="s_img">
+                        <img src="${pro.img}" alt="" />
+                    </div>
+                    <div class="s_inforProduct">
+                        <h2>${pro.name}</h2>
+                        <h3>$ ${pro.priceSale} <span>$ ${pro.price}</span></h3>
+                    </div>
+                    </div>
+            
+            </div>`;
+    });
+}
+renderProduct("man");
 //showProduct
 let listDotProduct = document.querySelectorAll(".s-showProduct .s_dot");
 listDotProduct.forEach((dot) => {

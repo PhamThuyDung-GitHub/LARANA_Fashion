@@ -1,0 +1,29 @@
+.s-ourService {
+    .s_bot {
+        margin-top: 4rem;
+        .s_service {
+            img {
+                width: 20%;
+                margin: 0 auto;
+            }
+            .s_content {
+                margin-top: 1rem;
+                text-align: center;
+                h4 {
+                    font-size: $fs-18;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+                h5 {
+                    margin-top: 0.5rem;
+                    font-size: $fs-16;
+                    color: $gray-color;
+                    font-weight: $fw-300;
+                }
+            }
+        }
+    }
+}

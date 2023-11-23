@@ -1,0 +1,57 @@
+.s_cardProduct {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .s_addCart {
+            opacity: 1;
+            visibility: visible;
+            bottom: 15.5%;
+        }
+    }
+    .s_img {
+        overflow: hidden;
+        img {
+            height: 400px;
+            object-fit: cover;
+            transition: 0.7s;
+        }
+        &::before {
+            background-color: #0000003c;
+            @include posAbsolute("tr", 0, 0);
+            @include afterAndBefore();
+            height: 83%;
+            z-index: 999999;
+            opacity: 0;
+            transition: 0.7s;
+            visibility: hidden;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .s_inforProduct {
+        margin: 1.5rem 0;
+        text-align: center;
+        h2 {
+            font-size: $fs-18;
+            font-weight: $fw-400;
+        }
+        h3 {
+            font-weight: $fw-400;
+            margin-top: 0.8rem;
+            font-size: $fs-18;
+            span {
+                color: $gray-color-2;
+                font-style: italic;
+                text-decoration: line-through;
+                font-size: $fs-14;
+            }
+        }
+    }
+}

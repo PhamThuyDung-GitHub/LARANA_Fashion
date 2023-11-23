@@ -1,0 +1,22 @@
+.s-ourStory {
+    margin: 2rem 0;
+    .s_our {
+        position: relative;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 450px;
+        }
+        .s_content {
+            @include posAbsolute("tl", 6rem, 4rem);
+            h1 {
+                margin-bottom: 1rem;
+            }
+            .s_story {
+                width: 47%;
+                padding-bottom: 0.8rem;
+            }
+        }
+    }
+}

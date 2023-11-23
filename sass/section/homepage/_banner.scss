@@ -22,14 +22,14 @@
                     padding-bottom: 1em;
                     transform: translateY(-90px);
                     opacity: 0;
-                    transition: 3s;
+                    transition: 1s;
                 }
                 h1 {
                     font-weight: $fw-800;
                     font-size: $fs-50;
                     transform: translateY(-90px);
                     opacity: 0;
-                    transition: 3s;
+                    transition: 1s;
 
                     span {
                         color: $secondary-color;
@@ -43,13 +43,13 @@
                     letter-spacing: 0.2rem;
                     transform: translateY(90px);
                     opacity: 0;
-                    transition: 3s;
+                    transition: 1s;
                     color: $white-color;
                 }
                 .c-button-1 {
                     transform: translateY(90px);
                     opacity: 0;
-                    transition: 3s;
+                    transition: 1s;
                     color: $white-color;
                 }
             }

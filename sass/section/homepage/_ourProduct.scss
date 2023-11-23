@@ -1,3 +1,27 @@
 .s-ourProduct {
-    margin-top: 2rem;
+    .s_bot {
+        .s_tab {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    margin-right: 7rem;
+                    font-size: $fs-16;
+                    font-weight: $fw-400;
+                    padding: 0.4rem 1.5rem;
+                    color: $gray-color-2;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &.active {
+                        color: $black-color;
+                        background-color: $gray-color-4;
+                        padding: 0.4rem 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .s_product {
+        margin-top: 1.5rem;
+    }
 }

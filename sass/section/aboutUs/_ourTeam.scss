@@ -1,0 +1,28 @@
+.s-ourTeam {
+    .s_team {
+        border-bottom: 1px solid #eee;
+        margin-top: 0.5rem;
+        padding-bottom: 3rem;
+        cursor: pointer;
+        img {
+            height: 450px;
+            object-fit: cover;
+        }
+        .s_inforTeam {
+            text-align: center;
+            padding-top: 1rem;
+            h3 {
+                font-size: $fs-18;
+                transition: 0.5s;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+            h5 {
+                font-size: $fs-16;
+                font-weight: $fw-300;
+                color: $gray-color;
+            }
+        }
+    }
+}
