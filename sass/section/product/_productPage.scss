@@ -1,0 +1,54 @@
+.s-productPage {
+    h2 {
+        font-size: $fs-15;
+        margin: 3rem 0 2rem 0;
+        font-weight: $fw-400;
+        color: $black-color;
+        .s_home {
+            color: $gray-color-2;
+        }
+        .s_angel {
+            color: $black-color;
+            padding: 0 0.6rem;
+        }
+    }
+    .s_filterProduct {
+        .s_filter {
+            margin-bottom: 2.5rem;
+            h4 {
+                font-size: $fs-16;
+                font-weight: $fw-600;
+            }
+            ul {
+                li {
+                    margin-top: 1rem;
+                    font-size: $fs-14;
+                    color: $gray-color-2;
+                }
+            }
+        }
+    }
+    .s_showPro {
+        margin-bottom: 2rem;
+        .s_text {
+            display: flex;
+            align-items: center;
+            h4 {
+                font-size: $fs-15;
+                color: $secondary-color;
+                margin-right: 0.6rem;
+                i {
+                    margin-left: 0.3rem;
+                }
+            }
+            h5 {
+                font-size: $fs-15;
+                color: $gray-color-2;
+                span {
+                    color: $black-color;
+                    margin: 0 0.3rem;
+                }
+            }
+        }
+    }
+}

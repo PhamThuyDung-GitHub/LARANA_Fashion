@@ -54,3 +54,35 @@
         border: 2px solid $red-color;
     }
 }
+.c-button-4 {
+    background-color: transparent;
+    color: $black-color;
+    padding: 0.8rem 2rem;
+    font-size: $fs-14;
+    font-weight: $fw-700;
+    border: 1px solid $gray-color-3;
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $secondary-color;
+        background-color: $black-color;
+        color: $white-color;
+    }
+}
+.c-button-5 {
+    background-color: $black-color;
+    color: $white-color;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-size: $fs-14;
+    font-weight: $fw-500;
+    border: 1px solid $black-color;
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: $white-color;
+        color: $black-color;
+    }
+}

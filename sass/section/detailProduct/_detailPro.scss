@@ -1,0 +1,119 @@
+.s-detailPro {
+    margin: 3.5rem 0;
+    .s_img {
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 660px;
+        }
+        .s_hot {
+            @include posAbsolute("tr", 20px, 20px);
+            h4 {
+                font-style: italic;
+                background-color: $red-color;
+                color: $white-color;
+                font-size: $fs-16;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+    .s_inforPro {
+        h2 {
+            font-size: $fs-30;
+            font-weight: $fw-600;
+            width: 60%;
+        }
+        h3 {
+            font-weight: $fw-600;
+            margin: 2rem 0;
+            font-size: $fs-18;
+            font-weight: $fw-600;
+            .s_priceSale {
+                color: $red-color;
+            }
+            .s_price {
+                color: $gray-color-2;
+                font-weight: $fw-500;
+                font-size: $fs-15;
+                font-style: italic;
+                text-decoration: line-through;
+                margin-left: 0.5rem;
+            }
+        }
+        h5 {
+            font-size: $fs-15;
+            font-weight: $fw-400;
+            color: $gray-color;
+
+            span {
+                color: $black-color;
+                font-weight: $fw-600;
+                font-size: $fs-16;
+            }
+        }
+        .s_chooseColor {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            li {
+                background-color: $gray-color-4;
+                text-align: center;
+                width: 14%;
+                padding: 0.3rem 0;
+                transition: 0.5s;
+                cursor: pointer;
+                &.active {
+                    background-color: $black-color;
+                    color: $white-color;
+                }
+            }
+        }
+        .s_qualityAndAddCart {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            gap: 1rem;
+            .s_quality {
+                display: flex;
+                justify-content: space-between;
+                background-color: transparent;
+                border: 0.8px solid $black-color;
+                width: 20%;
+                padding: 0.5rem;
+                i {
+                    cursor: pointer;
+                    color: $black-color;
+                }
+            }
+            .s_addCart {
+                width: 80%;
+                .c-button-5 {
+                    padding: 0.6rem;
+                    width: 100%;
+                }
+            }
+        }
+        .s_tableSize {
+            h4 {
+                font-size: $fs-18;
+                font-style: italic;
+                margin-bottom: 1rem;
+            }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                border: 1px solid $gray-color-3;
+                text-align: center;
+                padding: 8px;
+            }
+            th {
+                background-color: $gray-color-4;
+            }
+        }
+    }
+}

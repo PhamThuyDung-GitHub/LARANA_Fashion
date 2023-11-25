@@ -53,13 +53,13 @@ listDotProduct.forEach((dot) => {
 });
 
 //Flashsale
-const saleEndDate = new Date("2023-11-15 00:00:00").getTime();
+const saleEndDate = new Date("2023-12-17 00:00:00").getTime();
 const countdown = setInterval(function () {
     const now = new Date().getTime();
     const timeRemaining = saleEndDate - now;
     if (timeRemaining <= 0) {
         clearInterval(countdown);
-        document.getElementById("days").innerHTML = "02";
+        document.getElementById("days").innerHTML = "20";
         document.getElementById("hours").innerHTML = "12";
         document.getElementById("minutes").innerHTML = "30";
         document.getElementById("seconds").innerHTML = "20";
